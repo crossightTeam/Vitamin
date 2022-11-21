@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 import LoadingOrError from 'components/LoadingOrError'
 import type { ReactElement } from 'react'
 import { lazy, Suspense } from 'react'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const Gallery = lazy(async () => import('pages/Gallery'))
